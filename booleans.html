@@ -29,7 +29,7 @@
       }
         */
 
-
+      /*
          //LOGICAL OPERATORS
          // AND
      console.log(true && true);  
@@ -39,7 +39,59 @@
 
 console.log(true || false); //or operator
 console.log(!true); //not operator
+*/
 
+      /*
+//Truthy and Falsy
+if (2) {
+  console.log('truthy');
+}
+if (0) {
+  console.log('falsy'); // falsy include: 0, '', NaN(not a number) Undefined, null
+}
+
+const cartQuantity = 5;
+
+if (cartQuantity) {
+  console.log('Cart is Loaded!')
+}
+*/
+
+      //Ternary Operator (?)
+      true ? "truthy" : "false"; //shortcut for below
+
+      if (true) {
+        ("truthy");
+      } else {
+        ("falsy");
+      }
+
+      //Guard operator (&&)
+      false && console.log("hello");
+
+      const message = false && "hello";
+      const messages = 5 && "hello";
+      console.log(message);
+      console.log(messages);
+
+      // //Above is short form for the below:
+      // let message;
+      // if(condition) {
+      //   message = 'hello'
+      // }
+
+      //Default operator (||)
+      const currency = "Ksh" || "USD";
+      const currencies = undefined || "USD";
+      console.log(currency);
+      console.log(currencies);
+
+      // //Above is short form for the below:
+      // let currency;
+
+      // if (!condition) {
+      //   currency
+      // }
     </script>
   </body>
 </html>
