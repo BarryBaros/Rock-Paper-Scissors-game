@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects</title>
+  </head>
+  <body>
+    <script>
+      const product = {
+        name: "Bread",
+        price: 1,
+      };
+      console.log(product);
+      console.log(product.name); //dot notation
+
+      product.name = "Milk"; //changing the value in an object
+      console.log(product);
+
+      delete product.price; //removing a value from the object
+      console.log(product);
+    </script>
+  </body>
+</html>
