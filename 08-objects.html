@@ -39,6 +39,14 @@
       console.log(product2["delivery-time"]);
       console.log(product2.rating.count);
       product2.fun();
+
+      //JSON: Used when sending data between 2 computers, used when storing data
+      console.log(JSON.stringify(product2)); //stringify is a method of the JSON object
+
+      //parse
+      //parse converts json string into a JS object.
+      const jsonString = JSON.stringify(product2);
+      console.log(JSON.parse(jsonString));
     </script>
   </body>
 </html>
