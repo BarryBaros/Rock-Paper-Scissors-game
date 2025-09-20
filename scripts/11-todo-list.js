@@ -19,13 +19,14 @@ function renderTodoList() {
     const dueDate = todoObject.dueDate;
     // const { name, dueDate } = todoObject; - This is the shortcut for the lines 15 and 16
     const html = `
-    <p>
-    ${name} ${dueDate}
+    <div>
+    ${name}</div>
+    <div> ${dueDate}</div>
     <button onclick="
     todoList.splice(${i}, 1);
     renderTodoList();
-    " >Delete</button> 
-    </p>`;
+    " class="delete-todo-button" >Delete</button> 
+    `;
     todoListHTML += html;
   }
 
@@ -49,4 +50,4 @@ function addTodo() {
   renderTodoList();
 }
 
-//minute 8:42
+//minute 8:56
