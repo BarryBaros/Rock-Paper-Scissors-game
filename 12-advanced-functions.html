@@ -6,7 +6,14 @@
     <title>Advanced Functions</title>
   </head>
   <body>
+    <button onclick="" class="js-button">Click</button>
+
     <script>
+     const buttonElement = document.querySelector('.js-button');
+     buttonElement.addEventListener('click', () => {
+      console.log('click')
+     });
+
       // function greeting() {
       //   console.log("hello");
       // }
@@ -27,14 +34,27 @@
        }, 3000);
        */
 
+       /*
       //LOOPING THROUGH AN ARRAY
       ["make dinner", "wash dishes", "watch youtube"].forEach(function (
         value,
         index
       ) {
+        if (value === "wash dishes") {
+          return;
+        }
         console.log(index);
         console.log(value);
       });
+
+      //ARROW FUNCTION
+      const arrowFunction = () => {
+        console.log("hello");
+      };
+      arrowFunction();
+      */
+
+
     </script>
   </body>
 </html>
