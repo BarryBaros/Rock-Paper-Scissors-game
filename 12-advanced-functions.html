@@ -14,17 +14,27 @@
 
       // SET TIME OUT
 
-      setTimeout(function () {
-        console.log("timeout");
-        console.log("timeout2");
-      }, 3000);
+      /* setTimeout(function () {
+         console.log("timeout");
+         console.log("timeout2");
+       }, 3000);
 
-      console.log("next line"); //Asynchronous Code - the computer wont wait the line to finish, 'next line' is displayed before the timeout.
-      //Synchronous is the opposite. The comp will wait for each line to finish, e.g timeout2 displays after timeout.
+       console.log("next line"); //Asynchronous Code - the computer wont wait the line to finish, 'next line' is displayed before the timeout.
+       //Synchronous is the opposite. The comp will wait for each line to finish, e.g timeout2 displays after timeout.
 
-      setInterval(function () {
-        console.log("interval");
-      }, 3000);
+       setInterval(function () {
+         console.log("interval");
+       }, 3000);
+       */
+
+      //LOOPING THROUGH AN ARRAY
+      ["make dinner", "wash dishes", "watch youtube"].forEach(function (
+        value,
+        index
+      ) {
+        console.log(index);
+        console.log(value);
+      });
     </script>
   </body>
 </html>
