@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Functions</title>
+  </head>
+  <body>
+    <script>
+      // function greeting() {
+      //   console.log("hello");
+      // }
+      // greeting();
+
+      // SET TIME OUT
+
+      setTimeout(function () {
+        console.log("timeout");
+        console.log("timeout2");
+      }, 3000);
+
+      console.log("next line"); //Asynchronous Code - the computer wont wait the line to finish, 'next line' is displayed before the timeout.
+      //Synchronous is the opposite. The comp will wait for each line to finish, e.g timeout2 displays after timeout.
+
+      setInterval(function () {
+        console.log("interval");
+      }, 3000);
+    </script>
+  </body>
+</html>
